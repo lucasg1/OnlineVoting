@@ -1,0 +1,5 @@
+ssh -f -N -L 9545:localhost:8545 carla@192.168.91.175
+
+nohup ganache-cli -h 192.168.91.175 > teste.txt &
+
+OBS: fazer node rodar no pc normal(com porta 9545) e ganache-cli rodar na máquina virtual

@@ -1,6 +1,7 @@
 Web3 = require('web3');
 fs = require('fs');
 web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+web3.eth.getAccounts(console.log)
 
 code = fs.readFileSync('Voting.sol').toString();
 solc = require('solc');
